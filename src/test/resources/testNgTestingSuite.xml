@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestNgSuite">
+    <test name="Simple Math Test" parallel="methods" thread-count="2">
+        <groups>
+            <run>
+                <include name="bugs"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testng.simplemath.DivisionTest"/>
+            <class name="testng.simplemath.MultiplicationTest"/>
+            <class name="testng.trigonometricmath.CosinusTest"/>
+            <class name="testng.trigonometricmath.TangentTest"/>
+            <class name="testng.trigonometricmath.CotangentTest"/>
+            <class name="testng.squareroot.SquareRootTest"/>
+        </classes>
+    </test>
+</suite>
